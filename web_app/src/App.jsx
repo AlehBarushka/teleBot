@@ -6,14 +6,14 @@ import { useTelegram } from './hooks/useTelegram';
 import Button from './components/Button';
 
 const App = () => {
-  const { tg, onToggleButton } = useTelegram();
+  const { tg, toggleButton } = useTelegram();
 
   useEffect(() => tg.ready(), [tg]);
 
   return (
     <>
       <Header />
-      <Button onClick={onToggleButton}>toggle</Button>
+      <Button onClick={toggleButton}>toggle</Button>
     </>
   );
 };
