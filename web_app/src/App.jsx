@@ -1,13 +1,21 @@
 import { useEffect } from 'react';
-import './App.css';
 import Header from './components/Header';
 
-import { tg } from './tgConfig';
+import './App.css';
+import { useTelegram } from './hooks/useTelegram';
+import Button from './components/Button';
 
 const App = () => {
-  useEffect(() => tg.ready(), []);
+  const { tg, onToggleButton } = useTelegram();
 
-  return <Header />;
+  useEffect(() => tg.ready(), [tg]);
+
+  return (
+    <>
+      <Header />
+      <Button onClick={onToggleButton}>toggle</Button>
+    </>
+  );
 };
 
 export default App;
