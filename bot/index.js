@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 const TOKEN = '5438133696:AAHKJ7pLWrC-6Z2RQlmbC9RSm3CADvCO5UY';
-const WEB_APP_URL = 'https://github.com/AlehBarushka';
+const WEB_APP_URL = 'https://telegram-webapp.netlify.app';
 
 const bot = new TelegramBot(TOKEN, { polling: true });
 

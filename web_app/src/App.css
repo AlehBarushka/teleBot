@@ -7,3 +7,22 @@
 body {
   background-color: var(--tg-theme-bg-color);
 }
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.button {
+  padding: 18px 15px;
+  background: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
