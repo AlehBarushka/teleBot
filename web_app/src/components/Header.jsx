@@ -6,11 +6,12 @@ const Header = () => {
   const { onClose } = useTelegram();
 
   const tg = window.Telegram.WebApp;
+  console.log(tg.initDataUnsafe.user?.username);
 
   return (
     <div className='header'>
       <Button onClick={onClose}>Закрыть</Button>
-      <span>{tg.initDataUnsafe?.user?.userName}</span>
+      <span className='username'>{tg.initDataUnsafe?.user?.username}</span>
     </div>
   );
 };

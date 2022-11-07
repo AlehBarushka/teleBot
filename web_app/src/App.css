@@ -26,3 +26,7 @@ body {
   outline: none;
   cursor: pointer;
 }
+
+.username {
+  color: var(--tg-theme-text-color);
+}
