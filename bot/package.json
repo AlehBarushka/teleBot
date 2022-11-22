@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node .index.js"
@@ -11,15 +14,8 @@
     "type": "git",
     "url": "git+https://github.com/AlehBarushka/teleBot.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlehBarushka/teleBot/issues"
-  },
-  "homepage": "https://github.com/AlehBarushka/teleBot#readme",
   "dependencies": {
-    "node-telegram-bot-api": "^0.58.0"
+    "telegraf": "^4.11.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"

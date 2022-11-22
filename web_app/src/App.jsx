@@ -21,7 +21,6 @@ const App = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [scores, setScores] = useState({ xScore: 0, oScore: 0 });
   const [gameOver, setGameOver] = useState(false);
-  const [winner, setWinner] = useState(null);
 
   const handleBoxClick = (boxIdx) => {
     // Step 1: Update the board
@@ -61,7 +60,6 @@ const App = () => {
       // Iterate through win conditions and check if either player satisfies them
       if (board[x] && board[x] === board[y] && board[y] === board[z]) {
         setGameOver(true);
-        setWinner(board[x]);
         return board[x];
       }
     }
